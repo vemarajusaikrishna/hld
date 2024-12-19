@@ -1,1 +1,93 @@
+Hotel
+
+User should be able to enter city,checkindate,checkout date,adults,children
+User apply filters price range(1000-2000)
+User sort the hotels based on rating,price(asc,desc)
+User can select multiple rooms based on the room type
+User click on the book button
+User enters payment details and payment gateway page opens with TTL
+
+
+
+
+
+
+System
+
+system should display all the hotels available in that city
+System act on the filter query and display the filtered results
+System should sort the filtered results
+System should get the available rooms types(Delux,suit,normal Non Ac,normal AC) in that hotel.
+System check the inventory if inventory available ,it creates a booking record and redirect to payment page
+
+
+Admin
+
+Manage hotels,rooms
+manage booking(cancel booking,create booking,viw ooking(userId/bookingId/hotelIds on date)) 
+update room prices based on room type
+initilates refund
+track payment
+
+
+Capcity estimation
+
+10000 hotels which has around 1 million rooms 
+1 hotel - 100 rooms
+
+On weekdays,65% of the rooms filled 
+on weekedns ,90% of the rooms filled
+average occupancy = 80% 
+
+1 person books 1 day , 2 days , 4 days
+average 2 nights
+
+80% occupancy for 2 days
+
+80*10^4/(2*100000)-4 TPS write 
+86400 seconds in a day ~100000
+
+
+QPS
+
+100 query per second
+10% will process payment as per funnel conversion priciple
+out of 100 ,50% reach rooms page,25% reaches payment page,10% do payment 
+So only 10% perform transaction out of 100 QPS
+So QPS alsways 100 times the TPS
+
+400 QPS read
+4 TPS write
+
+---------------
+
+
+APIS
+
+Hotel
+
+POST /v1/hotels/
+GET  /v1/hotels/{hotelId}
+PUT  /v1/hotels/{hotelId}
+DELETE /v1/hotels/{hotelId}
+
+Room
+POST /v1/hotels/{hotelId}/rooms
+GET  /v1/hotels/{hotelId}/rooms/{roomTypeId}
+GET  /v1/hotels/{hotelId}/rooms/
+PUT  /v1/hotels/{hotelId}rooms/{roomTypeId}
+DELETE /v1/hotels/{hotelId}rooms/{roomTypeId}
+
+Booking
+
+POST /v1/book/
+GET /v1/book/{userId/bookingId/hotelId}
+
+Search
+
+GET /v1/search/{cityId}?checkInDate= 22-05-2025 && checkoutDate = 24-05-2025
+GET /v1/search/{cityId}
+
+
+
 

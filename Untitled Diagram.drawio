@@ -94,7 +94,7 @@
           <mxGeometry x="285" y="428" width="170" height="30" as="geometry" />
         </mxCell>
         <mxCell id="PGbbE-xs5dSWAshDP1ZL-26" value="7.List&amp;lt;Driver&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="530" y="428" width="100" height="30" as="geometry" />
+          <mxGeometry x="500" y="428" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="PGbbE-xs5dSWAshDP1ZL-28" value="8.canAcccept?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="150" y="98" width="100" height="30" as="geometry" />
@@ -119,6 +119,12 @@
         </mxCell>
         <mxCell id="PGbbE-xs5dSWAshDP1ZL-35" value="11.Trip details" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="260" y="348" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PGbbE-xs5dSWAshDP1ZL-36" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.531;entryY=1.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="PGbbE-xs5dSWAshDP1ZL-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="500" as="sourcePoint" />
+            <mxPoint x="560" y="450" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

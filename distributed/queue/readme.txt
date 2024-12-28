@@ -4,10 +4,10 @@ Publish messages : A producer able to publish a message to queue
 Consume message:Aconsumer should able to consume a message.
 Queueing : Messages should be able to queueing of messages to handle high concurrency
 Routing: messages should be routed to correct consumer
-Acknowledgement:Consumer able to acknowlwdge the message delivery to prevent message loss
+Acknowledgement:Consumer able to acknowlwdge the message delivery to prevent message loss or confirm delivery
 Message Delivery:should follow semantics like at least once , at most once delivery,exactly once
 Message Failure : retry the message delivery
-Message recovery: configure one dead letter queue for this.
+Message recovery: Use WAL file for message recovery.
 Ordering:Priorty,FIFO
 
 

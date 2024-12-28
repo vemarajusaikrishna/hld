@@ -35,8 +35,8 @@ each message 10KB
 
 
 SQL   : write heavy , ACID for transactions, fixed schema
-No SQL: read heavy , eventual consistency,horizontal scalabel
-WAL   : extreme fast writes , durability,offsets for each message
+No SQL: read heavy , eventual consistency,horizontal scalable
+WAL   : extreme fast writes , durability,offsets for each message,extreme througput,used for recovery of partition.
 
 
 Configuration storage

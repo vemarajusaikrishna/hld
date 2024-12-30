@@ -73,6 +73,12 @@ delete the key which is anywhere.
 connect the previous and next nodes(forward and backward reference is requred)
 insert at head.
 
+why double likedlist?
+Finding the previous one with single linked list needs O(n) for connecting the previous and next.
+Finding the previous one with double linked list needs O(1) for connecting the previous and next.
+
+
+
 For this we need one more information ,where this key is located in likedlist.otherwise i need to search whole likedlist.Use map
 
 <Key , ListNode>

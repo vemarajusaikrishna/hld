@@ -1,1 +1,79 @@
+Funtional Requirements:
+----------------------
+1)User should insert data into cache
+2)User should fetch the datat
+
+Non functional requiremt:
+
+Highly availability:
+As the applications which use the cache are read heavy and cache the frequenctly availbale data,,so it should be highly available.
+Scalable:
+For read heavy applicatiions,as we get multiple requests,it should be scalable as per the load to provide same performance.otherwise no usage of cache
+durable:
+Cache should store data until TTL expires.
+consistency:
+As per the CAP theorem ,we cannot have highly available and strong consistency at same place.
+usage of different strategies for read and write decides 
+strong consistency or eventual for read request.
+
+
+API design
+
+insert(key , value); O(1) ;200,4xx,5xx
+get(key);O(1) 200 success,4xx,5xx error
+
+
+insert(key,value);
+
+if(map.containsKey(key)){
+  
+   //replace it;
+
+}
+else
+{
+    if(!map.isFull()){
+          
+         //insert it.
+      }
+     else
+     {
+         //here LRU eviction policy come to play
+     }
+
+}
+
+
+single Node
+
+Which data structure needs to be used?
+HashMap.
+
+
+LinkedList
+
+                             Sinlgy liked list(tail,head have)      Doubly liked list(tail ,head have)  Array
+
+Search O(n) 
+             
+insertion starting               O(1)                                                                   O(n)
+insertion ending                 O(1)                                                                   O(n)
+insertion middle                 O(n)                                                                   O(n) 
+
+deletion
+
+starting                        o(1)
+ending                          O(1)
+middle                          O(n)	
+
+
+get(key)
+
+delete the key which is anywhere.
+connect the previous and next nodes(forward and backward reference is requred)
+insert at head.
+
+For this we need one more information ,where this key is located in likedlist.otherwise i need to search whole likedlist.Use map
+
+<Key , ListNode>
 

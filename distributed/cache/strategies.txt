@@ -1,1 +1,80 @@
+There are 5 strategies divided based on request method
+
+read(2)               write (3)       
+
+read aside         write around
+read through       write through
+                   write behind
+
+cache design
+
+
+read aside
+
+For any read request from sender,first it checks in cache.
+If data found and not dirty read,it return data.
+
+If data not found, application itself read from DB and write to cache
+
+
+Advantages
+
+Heavy read apps
+As app reads data from db ,can have different schema in cache other than DB.
+What happens if cache server downs while reading?
+3)Sender request will not fail if cache server down s app reads separately.
+
+
+DisAdvantages
+1)For first time read ,it is can miss only.So pre heat the cache.
+2)Read sees old data as no update to cache  in case of write operation to DB triggerd separately.
+
+--------------------------------------------------------------------------------------------
+Read through:
+
+For any read request from sender,first it checks in cache.
+If data found and not dirty read,it return data.
+
+If data not found, cache itself read from DB and write to cache and reply to application.
+
+
+Advantages
+
+Heavy read apps
+
+
+DisAdvantages
+1)For first time read ,it is cache miss only.So pre heat the cache.
+2)Read sees old data as no update to cache  in case of write operation to DB triggerd separately.
+3)Sender request will fail if cache server down.
+4)As cache itself reads data from db in case of cache miss ,cannot have different schema in cache other than DB.
+
+combine with any write locgic to prevent from seeing old data.
+--------------------------------------------------------------------------------------------------------------------
+Write around
+
+
+Write through
+
+
+Write Behind
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

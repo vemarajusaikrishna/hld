@@ -97,6 +97,9 @@
         <mxCell id="I1RJLCAlzQBVwn9g0eSC-33" value="Connect with all services" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="400" y="948" width="160" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-34" value="Connects to all nodes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="518" width="140" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

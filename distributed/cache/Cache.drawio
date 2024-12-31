@@ -1,9 +1,102 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.2">
   <diagram name="Page-1" id="LBZWmM-tVi92HX_okKVo">
-    <mxGraphModel>
+    <mxGraphModel dx="3094" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2300" pageHeight="2300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-30" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="540" y="930" width="420" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-1" value="Cache(HashMap with all keys)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="I1RJLCAlzQBVwn9g0eSC-2" target="I1RJLCAlzQBVwn9g0eSC-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-2" value="Application" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-4" value="Optimization -1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="310" y="58" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-5" value="cache (1001-200)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="I1RJLCAlzQBVwn9g0eSC-7" target="I1RJLCAlzQBVwn9g0eSC-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-7" value="Application" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-8" value="Single point of failure&lt;div&gt;Non scalable,Not highly available&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="203" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-9" value="optimization -2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="308" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-10" value="Scalable with range based of sharding of keys" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="90" y="350" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-11" value="cache(1-1000)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-12" value="cache (2001-3000)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-13" value="1.Problems&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Tighly coupled as the application servers should have idea on range of keys to connect.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;If any new server added the range configuration should be updated on all apps&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;If any new server added/removed , the url should be updated in all applications&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="15" y="718" width="490" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-14" value="cache (1001-200)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="950" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="I1RJLCAlzQBVwn9g0eSC-16" target="I1RJLCAlzQBVwn9g0eSC-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-16" value="Application(Single URL)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="950" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-18" value="cache(1-1000)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-19" value="cache (2001-3000)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1080" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-21" value="Optimization -3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="60" y="878" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-22" value="Remove the burden of config management,service registry and service discovery,health monitoring to a coordination serviced" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="1340" width="690" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="I1RJLCAlzQBVwn9g0eSC-23" target="I1RJLCAlzQBVwn9g0eSC-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-23" value="Coordination service&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Service health checks&lt;/div&gt;&lt;div&gt;Confgiration management&lt;/div&gt;&lt;div&gt;Service registry&lt;/div&gt;&lt;div&gt;Service Discovery&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="1175" width="170" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-25" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" target="I1RJLCAlzQBVwn9g0eSC-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="1180" as="sourcePoint" />
+            <mxPoint x="600" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-26" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" target="I1RJLCAlzQBVwn9g0eSC-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="1180" as="sourcePoint" />
+            <mxPoint x="590" y="1200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-27" value="Cache client" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="950" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.412;entryY=0.013;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="I1RJLCAlzQBVwn9g0eSC-27" target="I1RJLCAlzQBVwn9g0eSC-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.002;entryY=0.119;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="I1RJLCAlzQBVwn9g0eSC-27" target="I1RJLCAlzQBVwn9g0eSC-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-33" value="Connect with all services" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="948" width="160" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

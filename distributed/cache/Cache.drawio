@@ -4,6 +4,9 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-58" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="1660" width="560" height="320" as="geometry" />
+        </mxCell>
         <mxCell id="I1RJLCAlzQBVwn9g0eSC-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="I1RJLCAlzQBVwn9g0eSC-52" target="I1RJLCAlzQBVwn9g0eSC-44">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -124,7 +127,7 @@
         <mxCell id="I1RJLCAlzQBVwn9g0eSC-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="I1RJLCAlzQBVwn9g0eSC-41" target="I1RJLCAlzQBVwn9g0eSC-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="I1RJLCAlzQBVwn9g0eSC-41" value="Coordination service&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Service health checks&lt;/div&gt;&lt;div&gt;Confgiration management&lt;/div&gt;&lt;div&gt;Service registry&lt;/div&gt;&lt;div&gt;Service Discovery&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-41" value="Distributed Coordination service&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Service health checks&lt;/div&gt;&lt;div&gt;Confgiration management&lt;/div&gt;&lt;div&gt;Service registry&lt;/div&gt;&lt;div&gt;Service Discovery,Leader election of each node&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="440" y="2047" width="170" height="150" as="geometry" />
         </mxCell>
         <mxCell id="I1RJLCAlzQBVwn9g0eSC-42" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" target="I1RJLCAlzQBVwn9g0eSC-39">
@@ -164,6 +167,39 @@
         </mxCell>
         <mxCell id="I1RJLCAlzQBVwn9g0eSC-51" value="optimization -4&amp;nbsp; Scaled the cache client and added APi gateway as load balancer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="80" y="1628" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-56" value="Problems&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Not Highly availble,but scalabel&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="95" y="2213" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-57" value="optimization -5&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;master slave configuration for each node ans slave in AZs&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="875" y="1668" width="330" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-59" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="1730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-61" value="AZ-1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="1660" width="120" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-62" value="AZ-2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="1660" width="120" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-63" value="AZ-3" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1620" y="1660" width="120" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-64" value="Writer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="1720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-66" value="Read Replica-1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="1717" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-67" value="Read-Replica-2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1620" y="1720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-68" value="cache node" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1415" y="1618" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I1RJLCAlzQBVwn9g0eSC-69" value="Limitations&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;We made system highly avaible but with eventual consistency asynchronous replication is choosen and good performance&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Problems&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;We made system highly avaible but with strong consistency quoram based replication is choosen and low performance&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="890" y="1998" width="720" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

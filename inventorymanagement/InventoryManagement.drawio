@@ -69,9 +69,6 @@
         <mxCell id="amSMFHpkHX3bF5GHom42-23" value="Images/videos of product" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1070" y="340" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="amSMFHpkHX3bF5GHom42-24" value="metada of productIds" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1090" y="600" width="140" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="amSMFHpkHX3bF5GHom42-25" value="Queue" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="690" y="482" width="60" height="100" as="geometry" />
         </mxCell>
@@ -146,15 +143,19 @@
         <mxCell id="amSMFHpkHX3bF5GHom42-47" value="shar3" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="1280" y="507" width="50" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="amSMFHpkHX3bF5GHom42-48" value="productId based sharding" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1190" y="458" width="160" height="30" as="geometry" />
+        <mxCell id="amSMFHpkHX3bF5GHom42-48" value="productId hash&amp;nbsp; based sharding(Thread contention also removed)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1085" y="458" width="370" height="30" as="geometry" />
         </mxCell>
         <mxCell id="amSMFHpkHX3bF5GHom42-49" value="Routing service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1080" y="540" width="60" height="230" as="geometry" />
+          <mxGeometry x="1070" y="527" width="60" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="amSMFHpkHX3bF5GHom42-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="amSMFHpkHX3bF5GHom42-50">
+        <mxCell id="amSMFHpkHX3bF5GHom42-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="amSMFHpkHX3bF5GHom42-50" target="amSMFHpkHX3bF5GHom42-57">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1900" y="630" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1865" y="632" />
+              <mxPoint x="1865" y="631" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="amSMFHpkHX3bF5GHom42-50" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
@@ -175,8 +176,8 @@
         <mxCell id="amSMFHpkHX3bF5GHom42-55" value="(single master for high availablity)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1590" y="452" width="200" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="amSMFHpkHX3bF5GHom42-57" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="1890" y="600" width="80" height="80" as="geometry" />
+        <mxCell id="amSMFHpkHX3bF5GHom42-57" value="Mapreduce" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="2000" y="592" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="amSMFHpkHX3bF5GHom42-59" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.072;entryY=0.016;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="amSMFHpkHX3bF5GHom42-50">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -189,6 +190,18 @@
             <mxPoint x="1530" y="690" as="sourcePoint" />
             <mxPoint x="1580" y="640" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="amSMFHpkHX3bF5GHom42-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.145;entryY=1;entryDx=0;entryDy=-4.35;entryPerimeter=0;" edge="1" parent="1" source="amSMFHpkHX3bF5GHom42-49" target="amSMFHpkHX3bF5GHom42-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="amSMFHpkHX3bF5GHom42-62" value="Distributed locking(zookeeper)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="amSMFHpkHX3bF5GHom42-63" value="partition the shard based on product category&lt;div&gt;each category one table.Partiton resolves thread contention also&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="800" width="220" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="amSMFHpkHX3bF5GHom42-64" value="Shard" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1690" y="968" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -59,6 +59,36 @@ periodc monitoring:
 real time monitoring
 
 
+APIs
+---------
+Product API:-
+
+
+Inventory API:-
+
+
+Supplier API:-
+
+
+Warehouse API:-
+
+
+order API:-
+
+
+ER Diagram
+-----------
+
+
+
+
+
+
+
+
+
+
+
 
 
 

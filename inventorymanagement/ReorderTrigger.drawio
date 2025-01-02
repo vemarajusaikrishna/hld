@@ -1,9 +1,150 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.2">
   <diagram name="Page-1" id="QTiEkAwzAiYesKaYTvqY">
-    <mxGraphModel>
+    <mxGraphModel dx="3094" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2300" pageHeight="2300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ruUIH0hXaa0sMSh6Po6T-2" target="ruUIH0hXaa0sMSh6Po6T-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-2" value="SQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="130" y="110" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ruUIH0hXaa0sMSh6Po6T-4" target="ruUIH0hXaa0sMSh6Po6T-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-4" value="Kafka connect debezium connector" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-5" value="Source" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="120" y="68" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ruUIH0hXaa0sMSh6Po6T-7" target="ruUIH0hXaa0sMSh6Po6T-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-7" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="520" y="110" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-8" value="Kafka broker" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="505" y="68" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ruUIH0hXaa0sMSh6Po6T-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-10" value="lambda function tigger notification to supplier" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-11" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="280" as="sourcePoint" />
+            <mxPoint x="156" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-12" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.644;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="ruUIH0hXaa0sMSh6Po6T-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="280" as="sourcePoint" />
+            <mxPoint x="430" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-13" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;Database trigger based approach&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="260" y="15" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-14" value="write to db about reoede data" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="360" y="298" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ruUIH0hXaa0sMSh6Po6T-16" target="ruUIH0hXaa0sMSh6Po6T-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-16" value="SQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="140" y="440" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ruUIH0hXaa0sMSh6Po6T-18" target="ruUIH0hXaa0sMSh6Po6T-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-18" value="DMS" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ruUIH0hXaa0sMSh6Po6T-20" target="ruUIH0hXaa0sMSh6Po6T-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-20" value="AWS kinesis" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="540" y="440" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ruUIH0hXaa0sMSh6Po6T-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-22" value="lambda function tigger notification to supplier" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-23" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="610" as="sourcePoint" />
+            <mxPoint x="166" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-24" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.644;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="ruUIH0hXaa0sMSh6Po6T-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="610" as="sourcePoint" />
+            <mxPoint x="440" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ruUIH0hXaa0sMSh6Po6T-26" target="ruUIH0hXaa0sMSh6Po6T-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-26" value="SQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="170" y="730" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ruUIH0hXaa0sMSh6Po6T-28" target="ruUIH0hXaa0sMSh6Po6T-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-28" value="AWS DMS" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ruUIH0hXaa0sMSh6Po6T-30" target="ruUIH0hXaa0sMSh6Po6T-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-30" value="Even bridge" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="560" y="730" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ruUIH0hXaa0sMSh6Po6T-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-32" value="lambda function tigger notification to supplier" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-33" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="900" as="sourcePoint" />
+            <mxPoint x="196" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-34" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.644;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="ruUIH0hXaa0sMSh6Po6T-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="900" as="sourcePoint" />
+            <mxPoint x="470" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruUIH0hXaa0sMSh6Po6T-35" value="For mysql ,binglog is generated for each insert.DMS listens that bin log&lt;div&gt;For postgresql,replicationis generated for each insert.DMS listens that bin log&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-55" y="383" width="430" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

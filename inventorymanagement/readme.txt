@@ -5,15 +5,11 @@ Funtinal requirements
 --------------------
 Able to add/delete/update/get products/inventory items in catalog
 sync with all ecommerce platformsn in rela time.
-
-Notifcations
 Notify customer about inventory status
-
-
-
 provide options to support reorder points
-Non functional requiements
 
+Non functional requiements
+-------------------------
 Highly available
 Durable
 consistency
@@ -61,10 +57,25 @@ real time monitoring
 
 APIs
 ---------
-Product API:-
+Product APIs
 
 
-Inventory API:-
+POST /api/v1/products
+
+GET  /api/v1/products/{productId}
+GET  /api/v1/products/
+PATCH  /api/v1/products/
+DELETE /api/v1/products/{productId}
+
+
+Inventory APIs
+
+POST /api/v1/products/{productId}/inventory/
+GET  /api/v1/products/{productId}/inventory/{inventoryId}
+PATCH  /api/v1/products/{productId}/inventory/{inventoryId}
+DELETE /api/v1/products/{productId}/{productId}/inventory/{inventoryId}
+
+
 
 
 Supplier API:-

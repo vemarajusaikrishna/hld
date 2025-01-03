@@ -36,6 +36,42 @@ Fault tolerance:
 -----------------
 
 
+Capacity estimation:
+---------------------
+
+2billion DAU 
+Each user watches at least 10 videos per day.
+20billion videos/day = 200k videos/sec
+
+upload : view = 1:100
+
+upload rate = 2k videos/sec
+
+storage capcity
+---------------
+Youtube sypports multiple resolutions like 1080 ,2160,4xxx,720,320,144,480
+A user uploaded 20 mins of video in 480 rate consumes - 1GB of memory
+
+2160   - 4GB
+1080  - 2GB
+480    - 1GB
+320    - 0.5
+144    - 0.25
+-------------
+8GB = total
+
+2000*8GB = 16TB /sec
+replication factor for durability = 3 AZs = 48TB/sec
+
+why video chunks?
+for ABR
+
+
+
+
+
+
+
 
 
 

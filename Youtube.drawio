@@ -56,7 +56,7 @@
         <mxCell id="ig0RAC2btzfinSxMwZul-14" value="Splitter" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="730" y="270" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ig0RAC2btzfinSxMwZul-15" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+        <mxCell id="ig0RAC2btzfinSxMwZul-15" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="740" y="130" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="ig0RAC2btzfinSxMwZul-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.461;exitY=1.117;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="ig0RAC2btzfinSxMwZul-7" target="ig0RAC2btzfinSxMwZul-15">
@@ -86,7 +86,7 @@
         <mxCell id="ig0RAC2btzfinSxMwZul-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ig0RAC2btzfinSxMwZul-23" target="ig0RAC2btzfinSxMwZul-24">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ig0RAC2btzfinSxMwZul-23" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+        <mxCell id="ig0RAC2btzfinSxMwZul-23" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="750" y="370" width="60" height="70" as="geometry" />
         </mxCell>
         <mxCell id="ig0RAC2btzfinSxMwZul-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ig0RAC2btzfinSxMwZul-38" target="ig0RAC2btzfinSxMwZul-31">
@@ -94,7 +94,7 @@
             <mxPoint x="780" y="640" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ig0RAC2btzfinSxMwZul-24" value="Quality check" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="ig0RAC2btzfinSxMwZul-24" value="Quality check for abusive content in chunks" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="720" y="500" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ig0RAC2btzfinSxMwZul-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.145;exitY=1;exitDx=0;exitDy=-4.35;exitPerimeter=0;entryX=1.056;entryY=0.144;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ig0RAC2btzfinSxMwZul-10" target="ig0RAC2btzfinSxMwZul-24">
@@ -142,7 +142,7 @@
             <mxPoint x="780" y="560" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ig0RAC2btzfinSxMwZul-38" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+        <mxCell id="ig0RAC2btzfinSxMwZul-38" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="760" y="570" width="40" height="50" as="geometry" />
         </mxCell>
         <mxCell id="ig0RAC2btzfinSxMwZul-40" value="480" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -183,6 +183,9 @@
             <mxPoint x="786" y="620" as="sourcePoint" />
             <mxPoint x="627" y="773" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="ig0RAC2btzfinSxMwZul-53" value="Using kafka for parallel processing" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="345" y="628" width="210" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

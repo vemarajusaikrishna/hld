@@ -63,8 +63,31 @@ A user uploaded 20 mins of video in 480 rate consumes - 1GB of memory
 2000*8GB = 16TB /sec
 replication factor for durability = 3 AZs = 48TB/sec
 
+------------------------------------------------------
+Upload process
+----------------
+1)User send a upload request to upload server
+2)upload server the persist the upload url.
+3)Upload server return presigned url of s3 to user.
+4)User goes to s3 and performs multipart upload.
+5)If upload completes , user sends acknowledgement to upload server
+6)upload service change the status from pending to complete.
+
+
+Videometadata:-
+
+videoId
+title
+description
+createdBy
+createdOn
+duration
+language
+locationUrl
+status : pending/completed
 why video chunks?
 for ABR
+---------------------------------------------------------------------------
 
 How to identify the nearest local CDN ?
 1. User request:

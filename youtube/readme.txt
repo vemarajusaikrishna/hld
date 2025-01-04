@@ -72,6 +72,7 @@ Upload process
 4)User goes to s3 and performs multipart upload.
 5)If upload completes , user sends acknowledgement to upload server
 6)upload service change the status from pending to complete.
+7)Upload service publish event to queue.
 
 
 Videometadata:-

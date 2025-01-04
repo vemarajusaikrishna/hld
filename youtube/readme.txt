@@ -75,7 +75,7 @@ Upload process
 7)Upload service publish event to queue.
 
 
-Videometadata:-
+Videometadata schema:-
 
 videoId
 title
@@ -84,7 +84,11 @@ createdBy
 createdOn
 duration
 language
-locationUrl
+rawUrl
+720Url
+1080Url
+144Url
+320Url
 status : pending/completed
 ===================================
 why kafka?

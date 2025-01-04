@@ -66,6 +66,14 @@ replication factor for durability = 3 AZs = 48TB/sec
 why video chunks?
 for ABR
 
+How to identify the nearest local CDN ?
+1. User request:
+When a user requests a video on YouTube, their request is sent to a DNS server. 
+2. Anycast routing:
+The DNS server identifies the geographically closest CDN PoP based on the user's IP address and directs the request to that server. 
+3. Content delivery:
+The selected CDN server then serves the video content to the user from its cache, minimizing the distance data needs to travel. 
+
 
 
 

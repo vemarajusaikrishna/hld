@@ -86,6 +86,23 @@ duration
 language
 locationUrl
 status : pending/completed
+===================================
+why kafka?
+Higher resolution videos takes long time like upto 20mins
+Lower resolution videos takes less time for upload
+
+Each transcoder processing speed is different.
+
+publisher publish speed is 200 uploads/sec
+
+transcoding piplelines speed is different for different resolution
+
+2 points:
+consumer speed is different .So broker cannot push the messages at same speed to all consumers.
+Broker should support parallel processing.
+
+So topic supports the above 2 requirements.
+==============================================
 why video chunks?
 for ABR
 ---------------------------------------------------------------------------

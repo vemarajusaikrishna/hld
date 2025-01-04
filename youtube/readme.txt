@@ -75,6 +75,16 @@ The DNS server identifies the geographically closest CDN PoP based on the user's
 The selected CDN server then serves the video content to the user from its cache, minimizing the distance data needs to travel. 
 
 
+How to decreaes latency in video delivery?
+Initial Upload: When a video is uploaded to YouTube, it is first processed and stored in a central data center.
+
+Replication to Regional Data Centers: YouTube proactively replicates content to regional data centers and cache locations, often before users in those regions explicitly request the video. This preemptive approach helps improve the delivery speed and reduces latency for viewers.
+
+Caching for Popular Content: For videos that gain popularity or are expected to be popular (like trending videos), YouTube may push those videos to multiple cache locations in advance. This ensures that when users in different regions request the video, it can be delivered quickly without needing to retrieve it from the original data center.
+
+On-Demand Caching: For less popular or niche content, videos may initially be stored only in the central data center. If a user requests such content from a specific region, YouTube will then cache it in the nearest data center. This on-demand approach helps optimize storage and bandwidth usage.
+
+
 
 
 

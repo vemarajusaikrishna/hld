@@ -46,6 +46,15 @@
             <mxPoint x="630" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="rknyvr7Q_bBwkxeCkK-Z-18" value="Problems&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1)Huge volume of view stream from kafka .SO not scalable,available,and relaiable and fault tolerance.&lt;/div&gt;&lt;div&gt;2)Huge volume of requests from client.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="50" y="348" width="560" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rknyvr7Q_bBwkxeCkK-Z-19" value="20 billion views/day" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="750" y="90" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rknyvr7Q_bBwkxeCkK-Z-20" value="200k views/sec" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="765" y="138" width="100" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

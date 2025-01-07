@@ -70,8 +70,100 @@
         <mxCell id="0Qr3yUuXug0cYQ5e2Dth-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.456;entryY=1.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="0Qr3yUuXug0cYQ5e2Dth-19" target="0Qr3yUuXug0cYQ5e2Dth-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-24" value="&lt;div style=&quot;text-align: justify;&quot;&gt;The notifications service is not scalable as we are using synchronous communication and cannot support multiple publisher and cosumers.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Not highly available&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;not fault tolerance&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;monolithic(all the functionality in single service)&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="380" width="590" height="100" as="geometry" />
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-24" value="&lt;div style=&quot;text-align: justify;&quot;&gt;The notifications service is not scalable as we are using synchronous communication and cannot support multiple publisher and cosumers.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Not highly available&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;not fault tolerance&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;monolithic(all the functionality in single service)&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;single point fof failure because of overload.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Notification service does not allow publishers and consumers to scale independently becuase of synchronous communication.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Loss of Events when notification service fails and cannot reprocess it.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="378" width="610" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-25" value="Problmes:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="348" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-26" value="Optimization 2:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="10" y="518" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-39" value="&lt;div style=&quot;forced-color-adjust: none; text-align: justify;&quot;&gt;Loss of Events when notification service fails and cannot reprocess it.&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; text-align: justify;&quot;&gt;&lt;div&gt;Notification service does not allow publishers and consumers to scale becuase of synchronous communication.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="560" width="400" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-40" value="Problems solved" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="5" y="548" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="850" as="targetPoint" />
+            <mxPoint x="520" y="865" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="0Qr3yUuXug0cYQ5e2Dth-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="780" as="targetPoint" />
+            <mxPoint x="520" y="865" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="0Qr3yUuXug0cYQ5e2Dth-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="950" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="590" y="850" />
+            </Array>
+            <mxPoint x="520" y="850" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-46" value="SMS" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="960" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-47" value="Push" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="760" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-48" value="EMail" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="830" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="850" as="targetPoint" />
+            <mxPoint x="150" y="790" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="850" as="targetPoint" />
+            <mxPoint x="150" y="910" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0Qr3yUuXug0cYQ5e2Dth-52">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-52" value="EventPublisher1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1000" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-54" value="Solution : Usdage of asynchronous communnication with the&amp;nbsp; broker for pb2&lt;div&gt;Usage of brokerwhich can retail messages for some time&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="65" y="675" width="430" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-55" value="EventPublisher1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-56" value="EventPublisher1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-57" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=92;" vertex="1" parent="1">
+          <mxGeometry x="470" y="830" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="0Qr3yUuXug0cYQ5e2Dth-59" target="0Qr3yUuXug0cYQ5e2Dth-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-59" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=92;" vertex="1" parent="1">
+          <mxGeometry x="220" y="880" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-60" value="Notification service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="850" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.619;entryY=0.897;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="0Qr3yUuXug0cYQ5e2Dth-60" target="0Qr3yUuXug0cYQ5e2Dth-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-64" value="Queue" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="210" y="838" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-65" value="Queue" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="460" y="788" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

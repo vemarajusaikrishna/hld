@@ -1,9 +1,78 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.3">
   <diagram name="Page-1" id="l-JMUQ7-zllTJ2TppN1U">
-    <mxGraphModel>
+    <mxGraphModel dx="794" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2300" pageHeight="2300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="0Qr3yUuXug0cYQ5e2Dth-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="140" as="targetPoint" />
+            <mxPoint x="200" y="140" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0Qr3yUuXug0cYQ5e2Dth-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0Qr3yUuXug0cYQ5e2Dth-3" target="0Qr3yUuXug0cYQ5e2Dth-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0Qr3yUuXug0cYQ5e2Dth-3" target="0Qr3yUuXug0cYQ5e2Dth-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="590" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-3" value="Norification Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="290" y="70" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-8" value="SMS" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="250" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-9" value="Push" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="50" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-11" value="EMail" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="120" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0Qr3yUuXug0cYQ5e2Dth-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-12" value="EventPublisher1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0Qr3yUuXug0cYQ5e2Dth-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-13" value="EventPublisher1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0Qr3yUuXug0cYQ5e2Dth-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-14" value="EventPublisher1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-19" value="User DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="370" y="290" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.456;entryY=1.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="0Qr3yUuXug0cYQ5e2Dth-19" target="0Qr3yUuXug0cYQ5e2Dth-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0Qr3yUuXug0cYQ5e2Dth-24" value="&lt;div style=&quot;text-align: justify;&quot;&gt;The notifications service is not scalable as we are using synchronous communication and cannot support multiple publisher and cosumers.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Not highly available&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;not fault tolerance&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;monolithic(all the functionality in single service)&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="380" width="590" height="100" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

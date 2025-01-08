@@ -141,6 +141,33 @@
         <mxCell id="lDcpKYnPJLl7WVR2dZTZ-57" value="Direct deposit system" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="515" y="1060" width="140" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lDcpKYnPJLl7WVR2dZTZ-58" target="lDcpKYnPJLl7WVR2dZTZ-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-58" value="Payment Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-59" value="Wallet service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="1550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-60" value="Ledger" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="505" y="1550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-61" value="PSP" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="505" y="1290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-64" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.417;entryY=0.044;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="lDcpKYnPJLl7WVR2dZTZ-59">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="1480" as="sourcePoint" />
+            <mxPoint x="430" y="1430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-66" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.381;entryY=-0.044;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="lDcpKYnPJLl7WVR2dZTZ-60">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="1480" as="sourcePoint" />
+            <mxPoint x="430" y="1430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

@@ -69,6 +69,78 @@
         <mxCell id="lDcpKYnPJLl7WVR2dZTZ-25" value="Direct deposit system" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="500" y="268" width="140" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lDcpKYnPJLl7WVR2dZTZ-26" target="lDcpKYnPJLl7WVR2dZTZ-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lDcpKYnPJLl7WVR2dZTZ-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-26" value="Payment service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-27" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="135" y="530" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-28" value="Payment DB" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="120" y="640" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="lDcpKYnPJLl7WVR2dZTZ-26" target="lDcpKYnPJLl7WVR2dZTZ-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-30" value="Leger DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="370" y="750" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-31" value="Buyer and seller credit and debit info" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="290" y="868" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="lDcpKYnPJLl7WVR2dZTZ-26" target="lDcpKYnPJLl7WVR2dZTZ-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-33" value="Buyer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="375" y="370" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.417;entryY=0.089;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="lDcpKYnPJLl7WVR2dZTZ-33" target="lDcpKYnPJLl7WVR2dZTZ-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-35" value="calls to payment service" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="345" y="478" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-36" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="425" y="438" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-37" value="2.create record of payment in pending status" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="120" y="508" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lDcpKYnPJLl7WVR2dZTZ-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-39" value="Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-40" value="3.Initialtes gateway" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="485" y="540" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-43" value="Amzon Bank" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-44" value="4.credit amount to&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="660" y="618" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-45" value="5.send trasaction Id and payment status&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="425" y="570" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-47" value="6.update payment status to success" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="190" y="610" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lDcpKYnPJLl7WVR2dZTZ-48" value="7.updates ledger DB of buyer and seller" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="395" y="670" width="230" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

@@ -159,6 +159,27 @@
         <mxCell id="EsFPYt3RrwEHIFZ30FWM-45" value="6.send response" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="35" y="218" width="110" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="EsFPYt3RrwEHIFZ30FWM-46" value="1.send booking request" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="970" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EsFPYt3RrwEHIFZ30FWM-47" value="2.Triggers orchestrator" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1060" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EsFPYt3RrwEHIFZ30FWM-48" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="EsFPYt3RrwEHIFZ30FWM-42" target="EsFPYt3RrwEHIFZ30FWM-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="1090" as="sourcePoint" />
+            <mxPoint x="410" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EsFPYt3RrwEHIFZ30FWM-49" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.939;exitY=1.1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.145;entryY=1;entryDx=0;entryDy=-4.35;entryPerimeter=0;" edge="1" parent="1" source="EsFPYt3RrwEHIFZ30FWM-6" target="EsFPYt3RrwEHIFZ30FWM-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="380" as="sourcePoint" />
+            <mxPoint x="410" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EsFPYt3RrwEHIFZ30FWM-50" value="6.updates the reservation status" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="315" y="328" width="190" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

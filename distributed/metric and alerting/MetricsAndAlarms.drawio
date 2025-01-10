@@ -116,16 +116,16 @@
           <mxGeometry x="110" y="1110" width="200" height="30" as="geometry" />
         </mxCell>
         <mxCell id="tU78rsOKaXReI7qJYb4Z-49" value="real time" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="105" y="1238" width="70" height="30" as="geometry" />
+          <mxGeometry x="120" y="1225" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="tU78rsOKaXReI7qJYb4Z-50" value="Mapreduce workers" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="1020" width="120" height="60" as="geometry" />
+          <mxGeometry x="330" y="963" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="tU78rsOKaXReI7qJYb4Z-51" value="Spark" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="1160" width="120" height="60" as="geometry" />
+          <mxGeometry x="340" y="1100" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="tU78rsOKaXReI7qJYb4Z-52" value="Apache flink" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="1330" width="120" height="60" as="geometry" />
+          <mxGeometry x="330" y="1210" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

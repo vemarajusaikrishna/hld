@@ -109,14 +109,14 @@
         <mxCell id="tU78rsOKaXReI7qJYb4Z-45" value="Analysis" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="5" y="908" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tU78rsOKaXReI7qJYb4Z-47" value="Batch processing" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="120" y="978" width="120" height="30" as="geometry" />
+        <mxCell id="tU78rsOKaXReI7qJYb4Z-47" value="Batch processing(every 5 minust )" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="978" width="200" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tU78rsOKaXReI7qJYb4Z-48" value="near realtime with micro batching" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="110" y="1110" width="200" height="30" as="geometry" />
+        <mxCell id="tU78rsOKaXReI7qJYb4Z-48" value="near realtime with micro batching(5seconds)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="45" y="1110" width="260" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tU78rsOKaXReI7qJYb4Z-49" value="real time" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="120" y="1225" width="70" height="30" as="geometry" />
+        <mxCell id="tU78rsOKaXReI7qJYb4Z-49" value="real time(continuous)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="85" y="1225" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="tU78rsOKaXReI7qJYb4Z-50" value="Mapreduce workers" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="330" y="963" width="120" height="60" as="geometry" />

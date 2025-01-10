@@ -27,13 +27,27 @@ capacity estination
 -------------
 componenets
 
-1)data collection
-2)data transmission
-3)data storage
-4)query service
-5)Data analysis
-6)visualization
-7)Alerting on data
+1)source
+2)data collection
+3)data transmission
+4)data storage
+5)query service
+6)Data analysis
+7)visualization
+8)Alerting on data
+-------------
+
+How to collect the data points from source?
+
+Background thread(Deamon thread runs)
+
+push vs pull
+
+If we push the data points , need to implement retry on all sources(causes redundancy) in case issue from collection service.
+If collection service pulls ,retry burden shifted to collection service.
+
+What if collection service failed to get after retry attempts?
+A)inform support team as mail to fix the source
 
 
 

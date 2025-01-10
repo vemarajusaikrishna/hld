@@ -39,7 +39,7 @@ componenets
 
 How to collect the data points from source?
 
-Background thread(Deamon thread runs)
+Background thread(Deamon thread) collects it.
 
 push vs pull
 
@@ -48,6 +48,8 @@ If collection service pulls ,retry burden shifted to collection service.
 
 What if collection service failed to get after retry attempts?
 A)inform support team as mail to fix the source
+
+So push model is best.
 
 
 

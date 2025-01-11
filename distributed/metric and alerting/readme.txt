@@ -130,12 +130,12 @@ matrix factorzation
 
 
 Statistical nalysis : sales trends
-analoly detection : fraud detection like spikes,drops
-clustering : customer segmentation
-prediction : future forecasting
-optimization : dynamic price adjustments
-time series decompation : seasonal trends
-correlation : ads spend vs sales
+analoly detection : fraud detection like spikes,drops to prevent losses
+clustering : customer segmentation to offer more discounts to attraction
+prediction : future forecasting -> be ready to match the demand
+optimization : dynamic price adjustments -> 
+time series decompation : seasonal trends 
+correlation : ads spend vs sales -> comparaison
 
 
 

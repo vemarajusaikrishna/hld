@@ -124,6 +124,9 @@ Redcommenations
 
 colllaborative filtering
 content basaed filtering
+matrix factorzation
+
+-----------------------------
 
 
 Statistical nalysis : sales trends

@@ -149,6 +149,57 @@ time series decompation : seasonal trends
 correlation : ads spend vs sales -> comparaison
 
 
+----------------------------
+CPU percentage as example
+Data cleaning:
+
+    1)Drop the negative and null values
+    2)Discard incomplete records
+    3)reove duplicate entries
+Data foramtting
+  convert the timestamps to single standard foramt UTC or ISO
+  convert the flaot value to percenqages
+Data organising
+  group similar metrics related to same server
+  organize data by server or region etc
+Data sorting
+
+
+
+
+Db sharding
+----------------
+shard key :timestamp + matrixKey
+
+what if use only matrix key?
+
+A)The metrics are classififed into 2 types 
+High frequency metrics 
+low frequney metrics
+
+Now metric is mapped to one shard always.
+
+high frequency metrics perform more writes on one shard
+low frequency metrics perform low writes on one shard
+
+This leads to uneven write load distribution causes hotsopts and overutilized and underutilization of servers happens.
+
+what if use only timestamp?
+
+A)Lets take we write every second.
+In one second 10 million metrics generated for all metric types 
+One one shard only one million operations happens.
+Next second may be another shard but every second only one shard.So at peak times we get 1 billion metrics ,this goes to one shard and breaks the shard.
+
+Here write distribution itself not occurning .Atleast some distribution happening in above case.
+
+So use timestamp + metrickey
+
+
+
+
+
+
 
 
 

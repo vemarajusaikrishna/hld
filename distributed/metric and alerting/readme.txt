@@ -1,10 +1,11 @@
 icsMetrics and alarms
 --------------------
 
+3)What type of metrics do you want to collect?
 
-1)Collect the metrics from clients
-2)Show data on the metrics in realtime
-3)page the on call engineer when certain rules about the metrics are et
+4)want realtime streaming or batch of data points?
+
+3)DO you want to build alerts based on rule voilations of any metrics?
 
 
 ---------
@@ -49,7 +50,17 @@ If collection service pulls ,retry burden shifted to collection service.
 What if collection service failed to get after retry attempts?
 A)inform support team as mail to fix the source
 
-So push model is best.
+
+Q)what is the frequency of pushing data points?
+A)Every 5 seonds as batch or realtime
+
+Q)Where the metrics collected till 5 seonds stored?
+A)In memory or cache
+
+Q)If in memory, how to recover the metrics data collected till 4s if the server gort crashed after 4 seconds?
+A)save in WAL file and read it after recovery
+
+do reltime sedning of metrics to avoid crash problem,
 
 
 Statistical analysis:

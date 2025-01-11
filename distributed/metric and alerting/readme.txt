@@ -1,4 +1,4 @@
-Metrics and alarms
+icsMetrics and alarms
 --------------------
 
 
@@ -11,9 +11,9 @@ Metrics and alarms
 Non functional requirements
 
 1)Highly scalable 
-2)durable
+2)durable (keep the metrics data in multi AZ and multi region .so that they are durable)
 3)consistency
-4)
+4)metrics data should be persistance (use time series data store)
 -----------
 
 capacity estination

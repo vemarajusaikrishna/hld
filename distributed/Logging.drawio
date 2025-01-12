@@ -319,7 +319,7 @@
         <mxCell id="SqJxspUXISPDHeBOHrzl-116" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SqJxspUXISPDHeBOHrzl-113" target="SqJxspUXISPDHeBOHrzl-114">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SqJxspUXISPDHeBOHrzl-113" value="user DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+        <mxCell id="SqJxspUXISPDHeBOHrzl-113" value="user info DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="1350" y="1750" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="SqJxspUXISPDHeBOHrzl-114" target="SqJxspUXISPDHeBOHrzl-112">
@@ -336,6 +336,9 @@
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-120" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="1350" y="1450" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-121" value="user id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="1458" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

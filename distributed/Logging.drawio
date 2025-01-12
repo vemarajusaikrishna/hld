@@ -23,7 +23,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-6" value="Problems" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="75" y="238" width="70" height="30" as="geometry" />
+          <mxGeometry x="810" y="40" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SqJxspUXISPDHeBOHrzl-7" target="SqJxspUXISPDHeBOHrzl-11">
           <mxGeometry relative="1" as="geometry" />
@@ -80,6 +80,9 @@
             <mxPoint x="550" y="410" as="sourcePoint" />
             <mxPoint x="430" y="370" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-25" value="scalbilty problem solution and pace macthing problem,througput problem,message loss(durability and retention period)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="37.5" y="230" width="650" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

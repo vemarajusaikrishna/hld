@@ -114,7 +114,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-34" value="Flink can de-serialize based on schema&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="470" y="680" width="120" height="60" as="geometry" />
+          <mxGeometry x="470" y="680" width="140" height="110" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-35" value="realtimeprocessing" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="480" y="650" width="120" height="30" as="geometry" />
@@ -175,6 +175,9 @@
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.59;entryY=0.948;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="SqJxspUXISPDHeBOHrzl-50" target="SqJxspUXISPDHeBOHrzl-38">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-55" value="schema cache" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="688" width="60" height="28" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

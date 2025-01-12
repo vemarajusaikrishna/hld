@@ -96,9 +96,10 @@
         <mxCell id="SqJxspUXISPDHeBOHrzl-29" value="Flink(aggregate to file)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="610" y="1020" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SqJxspUXISPDHeBOHrzl-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SqJxspUXISPDHeBOHrzl-30">
+        <mxCell id="SqJxspUXISPDHeBOHrzl-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1240" y="1050" as="targetPoint" />
+            <mxPoint x="1300" y="1059.5" as="targetPoint" />
+            <mxPoint x="1070" y="1059.5" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-30" value="SPARK JOB" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -130,7 +131,7 @@
             <mxPoint x="1130" y="960" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SqJxspUXISPDHeBOHrzl-37" value="preprocessing stage" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="SqJxspUXISPDHeBOHrzl-37" value="&lt;i&gt;preprocessing stage&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="750" y="930" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-38" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=90;" vertex="1" parent="1">
@@ -216,7 +217,19 @@
           <mxGeometry x="125" y="1000" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-77" value="Structured foramt" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1210" y="1010" width="120" height="60" as="geometry" />
+          <mxGeometry x="1130" y="1010" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-78" value="cassandra" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="1030" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-82" value="columnar DB for nalysis pupose" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1285" y="1098" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-83" value="Analysis" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1550" y="1018" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.072;entryY=0.689;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="SqJxspUXISPDHeBOHrzl-78" target="SqJxspUXISPDHeBOHrzl-83">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

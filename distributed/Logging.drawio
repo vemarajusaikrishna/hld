@@ -4,6 +4,9 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="SqJxspUXISPDHeBOHrzl-97" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="810" width="180" height="310" as="geometry" />
+        </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-10" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=90;" vertex="1" parent="1">
           <mxGeometry x="315" y="305" width="180" height="210" as="geometry" />
         </mxCell>
@@ -188,9 +191,6 @@
         <mxCell id="SqJxspUXISPDHeBOHrzl-59" value="&lt;b&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;Text logs&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="385" y="593" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="SqJxspUXISPDHeBOHrzl-60" value="HDFS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="570" y="1080" width="60" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-63" value="FILE" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="785" y="1018" width="50" height="30" as="geometry" />
         </mxCell>
@@ -222,8 +222,8 @@
         <mxCell id="SqJxspUXISPDHeBOHrzl-78" value="cassandra" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="1340" y="1030" width="110" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SqJxspUXISPDHeBOHrzl-82" value="If I want to get likes count for all posts, need to read one column in all rows.so ue columnar DB like OLAP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1200" y="1120" width="580" height="30" as="geometry" />
+        <mxCell id="SqJxspUXISPDHeBOHrzl-82" value="If I want to get likes count for all posts, need to read one column in all rows.so ue columnar DB like cassandra or parquet file like OLAP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="1180" width="740" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-83" value="Analysis" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1550" y="1018" width="120" height="60" as="geometry" />
@@ -235,13 +235,36 @@
           <mxGeometry x="1355" y="988" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-86" value="If i want to read user profile , need to read all columns of one row. so use row based Db like OLTP&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1190" y="1150" width="550" height="30" as="geometry" />
+          <mxGeometry x="1200" y="1200" width="550" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-88" value="HDFS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="910" y="1078" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-89" value="spark job" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="950" y="1028" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-92" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="SqJxspUXISPDHeBOHrzl-93">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1280" y="1060" as="sourcePoint" />
+            <mxPoint x="1360" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SqJxspUXISPDHeBOHrzl-93" target="SqJxspUXISPDHeBOHrzl-95">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1620" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-93" value="Parquet files" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="860" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-95" value="S3" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="870" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.606;entryY=0.067;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="SqJxspUXISPDHeBOHrzl-95" target="SqJxspUXISPDHeBOHrzl-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-98" value="Columnar&amp;nbsp; datastores" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="1130" width="140" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

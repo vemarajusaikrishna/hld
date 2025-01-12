@@ -96,7 +96,12 @@
         <mxCell id="SqJxspUXISPDHeBOHrzl-29" value="Flink(aggregate to file)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="260" y="1010" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SqJxspUXISPDHeBOHrzl-30" value="Map reduce" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SqJxspUXISPDHeBOHrzl-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SqJxspUXISPDHeBOHrzl-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-30" value="SPARK JOB" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="540" y="1010" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-31" value="real time aggregation" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
@@ -179,11 +184,26 @@
         <mxCell id="SqJxspUXISPDHeBOHrzl-55" value="schema cache" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="490" y="688" width="60" height="28" as="geometry" />
         </mxCell>
-        <mxCell id="SqJxspUXISPDHeBOHrzl-56" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="50" y="620" as="sourcePoint" />
-            <mxPoint x="1171.3333740234375" y="620" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-59" value="&lt;b&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;Text logs&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="385" y="593" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-60" value="HDFS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1080" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-63" value="FILE" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="435" y="1008" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="SqJxspUXISPDHeBOHrzl-64" target="SqJxspUXISPDHeBOHrzl-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-64" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1000" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-66" value="KAFKS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="60" y="968" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-69" value="convert to some queryable state" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="497.5" y="1110" width="190" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

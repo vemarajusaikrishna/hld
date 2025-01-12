@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="SqJxspUXISPDHeBOHrzl-97" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1300" y="810" width="180" height="310" as="geometry" />
+          <mxGeometry x="1390" y="800" width="200" height="350" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-10" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=90;" vertex="1" parent="1">
           <mxGeometry x="315" y="305" width="180" height="210" as="geometry" />
@@ -220,19 +220,19 @@
           <mxGeometry x="1210" y="1018" width="50" height="40" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-78" value="cassandra" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="1340" y="1030" width="110" height="60" as="geometry" />
+          <mxGeometry x="1420" y="1028" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-82" value="If I want to get likes count for all posts, need to read one column in all rows.so ue columnar DB like cassandra or parquet file like OLAP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1140" y="1180" width="740" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-83" value="Analysis" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1550" y="1018" width="120" height="60" as="geometry" />
+          <mxGeometry x="1670" y="1040" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.072;entryY=0.689;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="SqJxspUXISPDHeBOHrzl-78" target="SqJxspUXISPDHeBOHrzl-83">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-85" value="OLAP DB" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1355" y="988" width="80" height="30" as="geometry" />
+          <mxGeometry x="1435" y="988" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-86" value="If i want to read user profile , need to read all columns of one row. so use row based Db like OLTP&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1200" y="1200" width="550" height="30" as="geometry" />
@@ -255,16 +255,34 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-93" value="Parquet files" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
-          <mxGeometry x="1340" y="860" width="80" height="100" as="geometry" />
+          <mxGeometry x="1450" y="850" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-95" value="S3" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="1590" y="870" width="60" height="80" as="geometry" />
+          <mxGeometry x="1710" y="870" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.606;entryY=0.067;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="SqJxspUXISPDHeBOHrzl-95" target="SqJxspUXISPDHeBOHrzl-83">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="SqJxspUXISPDHeBOHrzl-98" value="Columnar&amp;nbsp; datastores" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1340" y="1130" width="140" height="30" as="geometry" />
+          <mxGeometry x="1410" y="1090" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-99" value="parquet files are partioned by time" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="820" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-100" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="SqJxspUXISPDHeBOHrzl-101">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1280" y="1060" as="sourcePoint" />
+            <mxPoint x="1390" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-101" value="Snowflake,google big query,amazon redshift" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="695" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-102" value="datwarehouses" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="758" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SqJxspUXISPDHeBOHrzl-103" value="If we want to partion data absed on some other field as query use that field ,use warehouses" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="1270" width="510" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

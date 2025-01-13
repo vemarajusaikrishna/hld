@@ -1,9 +1,77 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.5">
   <diagram name="Page-1" id="b7o0Ur9a8SSX0Grqy8F7">
-    <mxGraphModel>
+    <mxGraphModel dx="794" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2300" pageHeight="2300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wBfVcKOulfDH1Hx5HX3t-1" target="wBfVcKOulfDH1Hx5HX3t-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-1" value="server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="60" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-2" value="processor" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="60" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-3" value="DB store" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="540" y="45" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wBfVcKOulfDH1Hx5HX3t-2" target="wBfVcKOulfDH1Hx5HX3t-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-6" value="2 approaches are there" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="55" y="178" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-7" value="Push" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="240" width="95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-9" value="continuous(entry -ntry) forwarding" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="360" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-10" value="batching&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="370" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-11" value="Agent less(syslog)entry by entry&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;No log file required&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="470" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-12" value="With agent(fluent bit/filebeat)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;WAL File is required&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="205" y="470" width="155" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.35;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wBfVcKOulfDH1Hx5HX3t-9" target="wBfVcKOulfDH1Hx5HX3t-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="380" as="sourcePoint" />
+            <mxPoint x="430" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wBfVcKOulfDH1Hx5HX3t-9" target="wBfVcKOulfDH1Hx5HX3t-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="380" as="sourcePoint" />
+            <mxPoint x="430" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wBfVcKOulfDH1Hx5HX3t-7" target="wBfVcKOulfDH1Hx5HX3t-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="370" as="sourcePoint" />
+            <mxPoint x="450" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.622;entryY=0.173;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wBfVcKOulfDH1Hx5HX3t-7" target="wBfVcKOulfDH1Hx5HX3t-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="370" as="sourcePoint" />
+            <mxPoint x="450" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-20" value="Fluent bite (buffer size full trigger offloading) or at regular intervals" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.433;entryY=-0.022;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wBfVcKOulfDH1Hx5HX3t-10" target="wBfVcKOulfDH1Hx5HX3t-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="442" y="470" />
+              <mxPoint x="442" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

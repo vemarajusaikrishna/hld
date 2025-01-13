@@ -76,11 +76,11 @@
             <mxPoint x="430" y="410" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wBfVcKOulfDH1Hx5HX3t-28" value="with source fwal file" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-28" value="with source fwal file in case of containers" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="127.5" y="690" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="wBfVcKOulfDH1Hx5HX3t-29" value="use sysslog to feed directly and fluent bit stream to destination" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="680" width="120" height="60" as="geometry" />
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-29" value="use sysslog to feed directly and fluent bit stream to destination.springboot logs directly send using syslog to fluent db" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="660" width="130" height="100" as="geometry" />
         </mxCell>
         <mxCell id="wBfVcKOulfDH1Hx5HX3t-30" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.462;exitY=1.024;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wBfVcKOulfDH1Hx5HX3t-12" target="wBfVcKOulfDH1Hx5HX3t-28">
           <mxGeometry width="50" height="50" relative="1" as="geometry">

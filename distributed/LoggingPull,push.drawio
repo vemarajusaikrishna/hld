@@ -230,7 +230,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="qW1WvsJhELm_dd2GFhy8-1" value="Baching in buffer&#xa;&#xa;&#xa;pros&#xa;-------&#xa;&#xa;&#xa;By accumulating logs in the buffer before sending them to Kafka, Fluent Bit can group multiple log entries together into a single message, optimizing network transmission. &#xa;&#xa;&#xa;Handling bursts of data:&#xa;When a sudden influx of logs arrives, the buffer can temporarily store them, preventing overloading of the Kafka cluster and potential data loss. &#xa;&#xa;&#xa;Reduced latency:&#xa;Instead of sending each log individually, the buffer allows for sending larger chunks of data at once, potentially lowering network latency. &#xa;&#xa;&#xa;Resilience to network issues:&#xa;If a temporary network glitch occurs, the buffered data can be held until the connection is re-established, ensuring data delivery reliability.&#xa;&#xa;&#xa;cons&#xa;-------&#xa;Memory usage:&#xa;Since the buffer is stored in memory, it&#39;s crucial to configure its size appropriately to avoid exceeding available RAM.&#xa; &#xa;Flush mechanism:&#xa;You need to define when to flush the buffer to Kafka, either based on a time interval or a certain number of accumulated logs" style="text;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="150" y="1250" width="560" height="530" as="geometry" />
+          <mxGeometry x="150" y="1250" width="590" height="710" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

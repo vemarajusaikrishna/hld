@@ -64,11 +64,8 @@
         <mxCell id="wBfVcKOulfDH1Hx5HX3t-20" value="With agent(fluent bit/filebeat)&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;fluentbit batch it internal memory&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="470" y="470" width="120" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="wBfVcKOulfDH1Hx5HX3t-25" value="Pull" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="620" y="240" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="wBfVcKOulfDH1Hx5HX3t-26" value="without agent,scheduler can send the log files(rsync).Every few minutes run rsync command" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="700" y="455" width="130" height="160" as="geometry" />
+        <mxCell id="wBfVcKOulfDH1Hx5HX3t-26" value="without agent,scheduler can send the log files(rsync).Every few minutes run rsync command to send the delta of logs." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="870" y="490" width="130" height="160" as="geometry" />
         </mxCell>
         <mxCell id="wBfVcKOulfDH1Hx5HX3t-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.344;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wBfVcKOulfDH1Hx5HX3t-10" target="wBfVcKOulfDH1Hx5HX3t-26" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -231,6 +228,21 @@
         </mxCell>
         <mxCell id="qW1WvsJhELm_dd2GFhy8-1" value="Baching in buffer&#xa;&#xa;&#xa;pros&#xa;-------&#xa;&#xa;&#xa;By accumulating logs in the buffer before sending them to Kafka, Fluent Bit can group multiple log entries together into a single message, optimizing network transmission. &#xa;&#xa;&#xa;Handling bursts of data:&#xa;When a sudden influx of logs arrives, the buffer can temporarily store them, preventing overloading of the Kafka cluster and potential data loss. &#xa;&#xa;&#xa;Reduced latency:&#xa;Instead of sending each log individually, the buffer allows for sending larger chunks of data at once, potentially lowering network latency. &#xa;&#xa;&#xa;Resilience to network issues:&#xa;If a temporary network glitch occurs, the buffered data can be held until the connection is re-established, ensuring data delivery reliability.&#xa;&#xa;&#xa;cons&#xa;-------&#xa;Memory usage:&#xa;Since the buffer is stored in memory, it&#39;s crucial to configure its size appropriately to avoid exceeding available RAM.&#xa; &#xa;Flush mechanism:&#xa;You need to define when to flush the buffer to Kafka, either based on a time interval or a certain number of accumulated logs" style="text;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="150" y="1250" width="590" height="710" as="geometry" />
+        </mxCell>
+        <mxCell id="qW1WvsJhELm_dd2GFhy8-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qW1WvsJhELm_dd2GFhy8-2" target="qW1WvsJhELm_dd2GFhy8-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qW1WvsJhELm_dd2GFhy8-2" value="Pull" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="340" y="2000" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qW1WvsJhELm_dd2GFhy8-3" value="Agent (FluentBit)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="2090" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qW1WvsJhELm_dd2GFhy8-4" value="AgentLess(Collection service use API to get raw logs)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="2080" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qW1WvsJhELm_dd2GFhy8-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.633;entryY=0.056;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qW1WvsJhELm_dd2GFhy8-2" target="qW1WvsJhELm_dd2GFhy8-4">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

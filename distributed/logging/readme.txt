@@ -30,4 +30,5 @@ data capcity:
 
 1 million messages/sec
 20 TB per day
+500 kafka brokers
 

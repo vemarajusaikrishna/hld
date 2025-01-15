@@ -170,8 +170,5 @@ Depends on system metrics so integration with metrics system is required
 
 
 
-
-
-
- 
-
+which db is more suitable?
+https://www.timescale.com/blog/cassandra-vs-timescaledb#cassandra-vs-timescaledb-insert-performance

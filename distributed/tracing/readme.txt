@@ -95,9 +95,21 @@ horizontal scaling:
 A)service discvoery
 2)
 
-
-
-
+spanSchema
+-----------
+traceId
+spanId
+parentSpanid:
+operationName:validateToken()
+serviceId : ABC
+startTimestamp
+endTimestamp:
+tags:
+{
+http.method:GET
+http.url : /users/profile
+http.status: 200
+errorMesssage:
 }
 
 

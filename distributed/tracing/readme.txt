@@ -161,7 +161,7 @@ Tail:
           erros like 5xx(particular error request only)
 
 Adaptive:
-    traffic : sampling decreases
+    traffic : sampling decreases(at peak hours decreases,low traffic sampling increases)
     latency : sampling increases
     error rate : sampling increases
 Depends on system metrics so integration with metrics system is required

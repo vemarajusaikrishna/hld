@@ -55,6 +55,62 @@ How much data for app spans?
 
 15PB of storage
 
+Distributed tracing problems
+ 
+1)Linking between spans across service
+   As the functionality is pread across multiple machines and services,calling service should send the trace context to caller service to maintain the parent-child link.
+A)Proppagation of  context(spanId and traceId) across service bounaries
+2)Need to capture network latency anf network failure
+
+3)Span loss:
+    network failure:
+    spans may not preoperly received or sent beacuse of network failures.SO implement retry 
+    service failure:
+           If a service failied before sending the span,implement fallback mechanisms
+    
+
+4)Trace reconstruction for end - end flow analysis:
+   As spans are spread acrosos multiple machines,
+A)span aggreagation
+
+5)storage problem due to huuge span volume
+  In single node , only 4 spans per trace example
+
+100 RPS - 100*4 = 400 spans
+
+4 services generates extra 3 service call spans 
+
+total 4+3 = 7 spans per request
+100*7 = 700 spans now
+
+span count increases exponentially dow to distributed nature.s
+A)apply samping(only a portion of spans are collected for latency analysis)
+
+consitency
+
+6)clock drift 
+
+horizontal scaling:
+7)when a new instance spins or old instance dead, need to do auto service registry and de registry with tracing service
+A)service discvoery
+2)
+
+
+
+
+}
+
+
+
+
+
+
+
+
+}
+
+
+
 
 
  

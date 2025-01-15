@@ -115,11 +115,59 @@ errorMesssage:
 
 
 
+Queries
+TraceLookup queries:
+-------------------
+
+1)Query by trace id:
+------------------
+select * from traces where traceId = "12345"
+
+2)Query all traces by service name by time range:
+--------------------
+select * from traces where serviceId = "CPG" where startTimestanp >= 2025-02-12 9:00:12 and endTimestamp <= 2025-02-12 10:00:00;
+
+Query all traces by service name by time range with error code = 500:
+---------------
+3)select * from traces where httpStatus = 500 and serviceId = "SAD" where startTimestanp >= 2025-02-12 9:00:12 and endTimestamp <= 2025-02-12 10:00:00;
 
 
+Latency analysis
+--------------
 
-
+measure the avg,min,max latrncy of requests by specific service
+seelct AVG(duration) from spans where serviceName = "CXS" and 
 }
+
+end - end latency
+select sum(duration) from spans where spans where traceId = "adad"
+
+latency threshold
+
+select * from traces where MAX(duration) > 500
+
+
+sampling
+
+1)Fixed sampling
+2)Random sampling
+3)Adaptive
+4)Tail
+
+Fixed means fixed value irrespective or anything
+Tail:
+    After request completion, the decision is taken for every trace
+          latrncy > 500 (want to analyze slow transactions oly)
+          erros like 5xx(particular error request only)
+
+Adaptive:
+    traffic : sampling decreases
+    latency : sampling increases
+    error rate : sampling increases
+Depends on system metrics so integration with metrics system is required
+
+
+
 
 
 

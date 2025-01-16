@@ -61,64 +61,136 @@ storage estimation
 
 
 
-APIs
+API
+---
 
-Theater API
+Theater API:
 
-POST /v1/theaters/
-GET  /v1/theaters/{theaterId}
-GET  /v1/theaters/
-PUT  /v1/theaters/{theaterId}
-DELETE /v1/theaters/{theaterId}
-
-
+GET /api/v1/theaters/{theaterId}
+POST /api/v1/theaters/
+DELETE /api/v1/theaters/{theaterId}
+PATCH /api/v1/theaters/{theaterId}
 
 Screen API
 
-POST /v1/theaters/{theaterId}/screens
-GET  /v1/theaters/{theaterId}/screens/{screenId}
-GET  /v1/theaters/{theaterId}/screens/
-PUT  /v1/theaters/{theaterId}/screens/{screenId}
-DELETE /v1/theaters/{theaterId}/screens/{screenId}
+GET /api/v1/theaters/{theaterId}/screens/{screenId}
+POST /api/v1/theaters/{theaterId}/screens
+DELETE /api/v1/theaters/{theaterId}screens/{screenId}
+PATCH /api/v1/theaters/{theaterId}screens/{screenId}
 
 Seat API
 
-POST /v1/theaters/{theaterId}/screens/{screenId}/seat
-GET  /v1/theaters/{theaterId}/screens/{screenId}/seat/
-DELETE /v1/theaters/{theaterId}/screens/{screenId}/seat/{seatId}
+GET /api/v1/theaters/{theaterId}/screens/{screenId}/seat/{seatId}
+POST /api/v1/theaters/{theaterId}/screens/{screenId}/seat
+DELETE /api/v1/theaters/{theaterId}screens/{screenId}/seat/{seatId}
+
+
+Movie
+
+GET     /api/v1/movies/{movieId}
+POST    /api/v1/movies
+DELETE  /api/v1/movies/{movieId}
+PATCH   /api/v1/movies/{movieId}
 
 Booking API
 
-POST /v1/book/
-GET  /v1/book/{userId}?bookedDate=yyyyddmm
-GET  /v1/book/{userId}
-GET  /v1/book/{theaterId}-admin
-GET  /v1/book
+POST /api/v1/reserve
+GET /api/v1/reserve/{bookinId}
+GET /api/v1/reserve/{userId}
+GET /api/v1/reserve/{theaterId}
+DELETE /api/v1/reserve/{bookinId}
+PATCH  /api/v1/eserve/{bookingId}
 
 Payment API
 
-POST /v1/payment/
-GET  /v1/payment/{bookingId}
-POST /v1/payment/{bookingId}/refund
-
-Seat Management
-
-POST  /v1/seat
+POST /api/v1/payment
+GET  /api/v1/payment/{paymentId}
+POST /api/v1/payment/{paymentId}/refund/
+DELETE /api/v1/payment/{paymentId}/refund/{refundId}
 
 
+Search API
 
-
-
-
-
-Payment API
-
+GET /api/search/v1/movies?region=AHD   -get list of movies in a city
+GET /api/search/v1/movies?region = AHD&language=english&genres=crime&format=3D&latitude=12.1313131&longitude=12.2121313 - apply filters
 
 Notification API
 
+POST /api/notify/v1/
+
+
+ER
+
+Theater - screen one -many
+screen - shows one -many
+movie - show one - many
+screen - show one - many
+
+user - booking one - many
+booking-seat - many - many same seat can be booked in different bookings from different shows
+booking-payment - one-one
+
+
+Theater
+
+id
+name
+description
+openingTime
+closingTime
+address
+
+Screen
+id
+theaterId
+size
+name
+
+Seat
+id
+screenId
+number
+row
+class
+
+Show
+id
+screenId
+movieId
+startTime
+endTime
+
+Movie
+id
+name
+title
+genere
+language
+duration
+releaseDate
+cast
+crew
+
+Booking
+
+bookingId
+bookedBy
+bookedOn
+lastUpdatedOn
+lastupdatedBy
+status
+showId
+paymentId
 
 
 
+
+bookedSeats
+
+showId
+seatId
+bookingId
+status
 
 
 

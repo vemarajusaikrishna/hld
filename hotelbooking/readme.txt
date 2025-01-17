@@ -1,24 +1,22 @@
 BookMyshow
 
 
-1)User should be able to get Cities to which the bookMyshow affiliated.
-2)After user selects,system should fetch list of movies relased in that city
-3)Now,user should be able to filter the results based on genere, language etc 
-4)User should be able to sort the results based on release date etc
-5)After user clicks on the movie,system should display all the details of the movie
-6)After user clicks on proceed,system should retrieve all the theaters,screens ,and schedules of movie.
-7)After user selects a show,it should fetch seating arrangemts
-8)User  selects list of seats , system should direct the user to payment page
+1)User should be able to enter checkinDaete and checkOutdate location adults ,children
+2)After user selects,system should fetch list of hotels 
+3)Now,user should be able to filter the results based on filters like flexible checkIn,PaymentModes,price range,ratings,user ratings,amenities
+4)User should be able to sort the results based on price ,rating
+5)After user clicks on the hotel,system should display all the inventory(roomTypes) available of hotel
+7)After user selects a roomType,it should fetch roomDetails and fill guest details and clicks proceed to payment
+8)system should direct the user to payment page
 9)After payment success,user get payment,booking notifcations.
 
 Admin 
 
-Create /update/delete/get theaters
-Create /update/delete/get screen info
-Create/update/delete/get seat pricing
-show schedule change
+Create /update/delete/get Hotel
+Create /update/delete/get Rooms
+Create/update/delete/get  room pricing
 Create/delete bookings based on bookingId
-fetch booking by userId,bookingId,theaterId
+fetch booking by bookingId,userId,hotelId on a date basis
 Track payment for a booking
 manage refunds
 
@@ -40,24 +38,91 @@ Search service:
 
 
 Capacity estimation
+Total 100k hotels
+1 hotel - 4 (standar,delux,ultra delux,suite) room types
+1 room type - 10 rooms
+1 room - 2 adults 1 child
 
-5000 screens all over the world
-1 screen - 4 shows daily
-1 screen - 200 seats
+total - 100k*4*10 = 4Million rooms
+Assume weekdays - 60 % occuppancy
+Assume weendends - 90% occupancy
+Average - 75% occupancy
 
-20000 shows - 4000000 seats
+People book rooms for one night,2 night, 3 nights
+take 2 nights
 
-weekdays - 60% seats occupied
-weekends - 90% seats occupied
+1)Request comes to booking service
 
-average 80% seats filled per day = 3200000 seats
+2)update the inventory 
+3)update the bokking
 
-1 booking - atleast 2 seats
-3200000/(2*86400) = 16 TPS
 
-QPS = 100*TPS = 1600 QPS
+what happens if inventory update success and booking update fail?
+revenue loss because the rooms are locked-owner loss
 
-storage estimation
+3)update the inventory 
+2)update the booking?
+
+what happens if booking update success and inventory update fail?
+double bookings will occur .customer loss
+
+
+2PC
+
+3)update the inventory  prepare
+2)update the booking?   prepare
+
+3)update the inventory  commit
+2)update the booking  commit
+
+Now problem of partial transaction issue failed?
+
+But if coordinator fails,no one send the commit message means single point of failure
+records consistently stay in locked phase
+
+
+So use consensus based algorithm(Paxos and raft)?
+Raft is consensus based algorithm.
+All participants should aware of the decision made by leader.So if leader fails , followers will continue the task
+
+When a transaction comes to coordinator,leader nodes uses quoram based replication and commits if quoram sends the acknowledgement
+
+2PC + consensus algorithm will solve the problem
+
+but 2PC is blocing protocol,which effects system scalablity
+
+
+Saga pattern
+--------------
+Saga patten is non blocking
+
+orchestrator  choreography
+
+
+explicit lock     implicit locking(db automatically locks  a table during update operation relase after comiton recird)
+
+using separate code to get ad release locks 
+
+2 ways Slect for update
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -5,6 +5,7 @@ Functional Requiremrnts:-
 2)Able to read the logs 
 3)What kind of log filter capability is required for visibility?
 4)Do you want to get monitoring befits like (alerts and alarms) based on some specific exception?
+Monitor log data for specific patterns or error messages, triggering alerts when predefined conditions are met
 5)What is rentention period of log system?
 
 
@@ -35,6 +36,17 @@ PERSISTENT	                  1. Missed if inactive
                               2. Missed if broker failures	Always Delivered
 
 enter image description here
+
+parquet files: Acolumnar file foramt used for efficient storage for long term storage doing batch processing , analytics queries to run;
+
+Use cases
+
+1)Column based compression for efficeint storage for long term storage
+2)Batch processing: While working on historical data for trend analysis, makes faster tansformations and aggregations as it is in columnar foramt
+3)Run analyhtics queries : optimize query perfromance;
+
+
+Log data is used for historical analysis (always batch processing only monthly,weekly,yearly)
 
 
 capacity planning

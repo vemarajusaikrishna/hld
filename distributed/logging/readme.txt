@@ -9,7 +9,16 @@ Non functional Requirements
 1)High availblity: infrastructure should up every time
 2)Minimal data loss: through pipe line
 3)scalanlity : do horizontal scaling if traffic spikes may be 10 times the normal
-4)Low latency : When the data is logged in every server or application ,it should be availble for consumption with low latency
+4)Low latency : When the data is logged in every server or application ,it should be availble for consumption with low latency.
+With the Persistent messages, broker will save messages to disk, but depends on what kind of subscribers it has, if no durable subscribers then with some implementations, messages are deleted once delivered.
+
+Published As	                   Nondurable Subscriber         	Durable Subscriber
+NON_PERSISTENT	              1. Missed if inactive
+                              2. Missed if broker failures	   1. Missed if broker failures
+PERSISTENT	                  1. Missed if inactive
+                              2. Missed if broker failures	Always Delivered
+
+enter image description here
 
 
 capacity planning

@@ -1,17 +1,33 @@
 
 Functional Requiremrnts:-
 ----------------------
+1)Able to write the logs genrated from any serviced or machine
+2)Able to read the logs 
+3)What kind of log filter capability is required for visibility?
+4)Do you want to get monitoring befits like (alerts and alarms) based on some specific exception?
+5)What is rentention period of log system?
+
+
+
 
 
 
 Non functional Requirements
 -------------------------
 1)High availblity: infrastructure should up every time
-2)Minimal data loss: through pipe line
-3)scalanlity : do horizontal scaling if traffic spikes may be 10 times the normal
+2)consistency : eventual consistency (with some latency)
+2)very minimal data loss: 
+                 broker property(persistant broker no data loss and non persistnt broker has data loss)
+                 consumer shoudl be (durable  or no)
+                 backpressure because of spike in production rate 10X (agent installed with buffer and use log files)
+                 
+3)scalablity : do horizontal scaling if traffic spikes may be 10 times the normal
 4)Low latency : When the data is logged in every server or application ,it should be availble for consumption with low latency.
-With the Persistent messages, broker will save messages to disk, but depends on what kind of subscribers it has, if no durable subscribers then with some implementations, messages are deleted once delivered.
+5)Durable logging
+6)Persistant logging
 
+With the Persistent messages, broker will save messages to disk, but depends on what kind of subscribers it has, if no durable subscribers then with some implementations, messages are deleted once delivered.
+a "durable subscriber" is a subscriber that retains its subscription even when disconnected from the broker, meaning it will receive any messages sent to the topic while it was offline when it reconnects, while a "non-durable subscriber" only receives messages when actively connected and loses any messages sent during its downtime
 Published As	                   Nondurable Subscriber         	Durable Subscriber
 NON_PERSISTENT	              1. Missed if inactive
                               2. Missed if broker failures	   1. Missed if broker failures

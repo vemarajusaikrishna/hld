@@ -1,10 +1,19 @@
 Add click counter and aggregator?
 
+youtube videoclicks/instagram post clicks/add clicks/website clicks/app clicks
+
+TO monitor their add performance and tune their add campaign
 
 FUnctional Requirements
 ----------------------
 Able to capture add click events
 Able to query add click events
+
+Non functional 
+---------------
+High availability
+Eventual consistency
+charge
 
 
 Capcity estimation
@@ -31,6 +40,21 @@ How much storage per 1 year?
 
 36500 MB
 36.5 TB
+
+problems:
+gauranteed click capture\
+A)use persistant durable message broker
+backpressure
+scale the parttions based on backpressure metric
+noisy neighbour
+consumer failure
+concurrent clicks on same add
+Idempotent clicks
+DB scalability(shard key)
+Trade off 
+----------
+real time(FLink but not exact sliding window aggregation with window time )/near real time(use micro batching with spark 1 minute granularity)/batch click aggregation(Load data into HDFS and uses map reduce with 10 minute granularity with exact count )
+
 
 How much storage per 10 year?
 

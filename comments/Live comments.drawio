@@ -1,9 +1,130 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.7">
   <diagram name="Page-1" id="bYMIOckP1fIGg-prLNnB">
-    <mxGraphModel>
+    <mxGraphModel dx="4094" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="7300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-31" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="280" width="780" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="n_TKUcaKmwKP8UpNIGOf-2" target="n_TKUcaKmwKP8UpNIGOf-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-2" value="Browser" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="140" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-3" value="comment service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-6" value="Comments store" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="680" y="130" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="n_TKUcaKmwKP8UpNIGOf-3" target="n_TKUcaKmwKP8UpNIGOf-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="n_TKUcaKmwKP8UpNIGOf-10" target="n_TKUcaKmwKP8UpNIGOf-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-10" value="Scroll up" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-11" value="POST /comments/{videoId}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="120" y="88" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="n_TKUcaKmwKP8UpNIGOf-12" target="n_TKUcaKmwKP8UpNIGOf-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-12" value="comment service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-15" value="comments store" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="690" y="310" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-17" value="/comments/{videoId}?curosr=last_commentId&amp;amp;page=50&amp;amp;direction=before" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="69" y="278" width="410" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="n_TKUcaKmwKP8UpNIGOf-25" target="n_TKUcaKmwKP8UpNIGOf-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-25" value="Scroll down" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150.5" y="542" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="n_TKUcaKmwKP8UpNIGOf-27" target="n_TKUcaKmwKP8UpNIGOf-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740.5" y="572" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-27" value="comment service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390.5" y="542" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-28" value="comments store" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="710.5" y="532" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-29" value="GET /comments/{videoId}?curosr=last_commentId&amp;amp;page=50&amp;amp;direction=after" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="79.5" y="500" width="430" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-32" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;On Demand comments retrieval&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="260" y="240" width="310" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-33" value="select * from comments where videoId = &#39;&#39;1234&#39; and commentedAt &amp;lt;= (select commentedAt from comments where commentId = last_comment_id)&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="590" y="380" width="800" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-34" value="select * from comments where videoId = &#39;&#39;1234&#39; and commentedAt &amp;gt;= (select commentedAt from comments where commentId = last_comment_id)&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="490" y="608" width="800" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-35" value="cache" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="600" y="490" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="n_TKUcaKmwKP8UpNIGOf-43" target="n_TKUcaKmwKP8UpNIGOf-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-43" value="Browser" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="840" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-44" value="comment service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-45" value="Comments store" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="770" y="830" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="n_TKUcaKmwKP8UpNIGOf-44" target="n_TKUcaKmwKP8UpNIGOf-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-47" value="Real time" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="415" y="738" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-48" value="Persistant connection" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="830" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-49" value="Short polling,Long polling,websockets,SSE" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="145" y="948" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-50" value="Long Polling : simulates the real time with every 5 seconds by hold ing the connection untill data availble before connection timed out" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="35" y="1020" width="730" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-51" value="Suppose if the data availble at the time of closing the connection,need to wait till next cycle" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1048" width="510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-52" value="Connection closing and opening overhead eveytime" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="35" y="1078" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-53" value="But we want real time" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1118" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-54" value="WEbsockets&lt;div&gt;Bidirectional ,&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Heavy weight,all load balancers&amp;nbsp;&lt;/span&gt;&lt;div&gt;,proxies,firewallsneeds to upgrade&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="95" y="1163" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-55" value="But we dont need bidirectional communcation here like chat" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1240" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-56" value="SSE are ok with unidiectional comminiation" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-5" y="1298" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-57" value="https://medium.com/@vlokesh08/exploring-concurrent-connections-websockets-sse-long-polling-grpc-quic-and-p2p-24b2b2763f3b" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-290" y="988" width="720" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

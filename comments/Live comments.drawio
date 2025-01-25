@@ -147,7 +147,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="n_TKUcaKmwKP8UpNIGOf-83" value="comment service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="690" y="2190" width="120" height="60" as="geometry" />
+          <mxGeometry x="690" y="2190" width="130" height="80" as="geometry" />
         </mxCell>
         <mxCell id="n_TKUcaKmwKP8UpNIGOf-84" value="Comments store" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="950" y="1845" width="60" height="80" as="geometry" />
@@ -251,6 +251,12 @@
         </mxCell>
         <mxCell id="n_TKUcaKmwKP8UpNIGOf-117" value="&lt;div&gt;problem 2:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;This is complex structure with overhead of coordination service.Lets shift the&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;burden of knowing which server to send to consumer which creates&lt;/div&gt;&lt;div&gt;&amp;nbsp;burden to knowing which comment to receive.Consumer uses broker which comment to receive&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="845" y="1015" width="530" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-118" value="{&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;videoId:[con1,con2,con3]&lt;/div&gt;&lt;div&gt;video2:[con12,con34,con45]&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="830.5" y="2200" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-119" value="connection" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="745" y="2240" width="70" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

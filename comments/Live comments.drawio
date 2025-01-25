@@ -37,11 +37,6 @@
         <mxCell id="n_TKUcaKmwKP8UpNIGOf-11" value="POST /comments/{videoId}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="120" y="88" width="170" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="n_TKUcaKmwKP8UpNIGOf-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.3;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="n_TKUcaKmwKP8UpNIGOf-12" target="n_TKUcaKmwKP8UpNIGOf-6">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="690" y="350" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="n_TKUcaKmwKP8UpNIGOf-12" value="comment service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="370" y="320" width="120" height="60" as="geometry" />
         </mxCell>
@@ -155,7 +150,7 @@
           <mxGeometry x="690" y="2190" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="n_TKUcaKmwKP8UpNIGOf-84" value="Comments store" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="955.5" y="1860" width="60" height="80" as="geometry" />
+          <mxGeometry x="950" y="1845" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="n_TKUcaKmwKP8UpNIGOf-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
@@ -181,26 +176,22 @@
         <mxCell id="n_TKUcaKmwKP8UpNIGOf-92" value="Load balncer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="430" y="1862" width="85" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="n_TKUcaKmwKP8UpNIGOf-95" value="cache" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
-          <mxGeometry x="745" y="1890" width="60" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="n_TKUcaKmwKP8UpNIGOf-96" value="retrieves config" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="835" y="2070" width="100" height="30" as="geometry" />
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-113" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="n_TKUcaKmwKP8UpNIGOf-97" target="n_TKUcaKmwKP8UpNIGOf-80">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="2160" />
+              <mxPoint x="771" y="2160" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="n_TKUcaKmwKP8UpNIGOf-97" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="735" y="1960" width="60" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="n_TKUcaKmwKP8UpNIGOf-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.328;entryY=0.195;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="n_TKUcaKmwKP8UpNIGOf-89" target="n_TKUcaKmwKP8UpNIGOf-97">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry x="940" y="2015" width="60" height="140" as="geometry" />
         </mxCell>
         <mxCell id="n_TKUcaKmwKP8UpNIGOf-99" value="Pub sub" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="815" y="1988" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="n_TKUcaKmwKP8UpNIGOf-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.457;entryY=0.144;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="n_TKUcaKmwKP8UpNIGOf-97" target="n_TKUcaKmwKP8UpNIGOf-80">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="n_TKUcaKmwKP8UpNIGOf-101" value="use retention policies," style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="790" y="2040" width="140" height="30" as="geometry" />
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-101" value="use retention policies to read from last committed offset+1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="920" y="2290" width="330" height="30" as="geometry" />
         </mxCell>
         <mxCell id="n_TKUcaKmwKP8UpNIGOf-102" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22SSE%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22550%22%20y%3D%221952%22%20width%3D%2250%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="610" y="2188" width="20" height="30" as="geometry" />
@@ -242,6 +233,24 @@
               <mxPoint x="910" y="145" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.667;entryY=0.107;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="n_TKUcaKmwKP8UpNIGOf-84" target="n_TKUcaKmwKP8UpNIGOf-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-112" value="CDC" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="985" y="1948" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-114" value="PULL" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="845" y="2128" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-115" value="How to handle consumer fail while processing message?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="605" y="2290" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-116" value="What happens to connections when consumer failed? new connection again created with another server" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="604" y="2340" width="580" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_TKUcaKmwKP8UpNIGOf-117" value="&lt;div&gt;problem 2:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;This is complex structure with overhead of coordination service.Lets shift the&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;burden of knowing which server to send to consumer which creates&lt;/div&gt;&lt;div&gt;&amp;nbsp;burden to knowing which comment to receive.Consumer uses broker which comment to receive&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="845" y="1015" width="530" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

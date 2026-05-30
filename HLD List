@@ -1,0 +1,70 @@
+1. Url shortener
+2. Pastern
+3. Craigslist
+4. Proximity service
+5. Reviews
+6. Tagging
+
+
+—————
+
+
+7. Log.  Pull vs push
+8. Metric
+9. Traces
+10. Weather  
+11. Supersonic
+
+12. Top k
+13. Add click aggrehator
+
+
+14. Facebook
+15. Twitter
+16. Presence indicator
+17. Social graph
+18. p[rivacxy abd visivbility filter
+
+
+19. Distributed pq
+20. Redis
+21. Rate limiter
+22. DHT Bittorrent
+23. Message queue
+24. Sorting
+25. Counter
+
+
+26. We crawler
+27. Camel camel camel
+28. Typeahead
+
+
+29. Live comments
+30. Auction
+31. Stock broker 
+
+
+32. Distributed scheduler
+33. Workflow automation
+34. Orchestrator
+
+
+35. Digital wallet
+36. Scheduled digital wallet
+
+Filesharing services
+—————————
+37. Dropbox
+38. YouTube
+39. App Store
+40. Distributed file system
+
+High concurrency
+————————
+41. Flashsale
+42. Superbowl Voting Service
+
+Edge computing or centralized (near real time vs batch)
+———————————————————————————
+43. Traffic Violation Detection Service
